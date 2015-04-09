@@ -1,0 +1,24 @@
+ storm.zookeeper.servers:
+     - "134.84.121.39"
+     - "134.84.121.40"
+ storm.zookeeper.port: 2181
+ storm.local.dir: "/app/storm"
+ nimbus.host: "134.84.121.39"
+ supervisor.slots.ports:
+     - 6700
+     - 6701
+     - 6702
+     - 6703
+ worker.childopts: "-Xmx768m"
+ nimbus.childopts: "-Xmx512m"
+ supervisor.childopts: "-Xmx256m"
+ java.library.path: "/usr/local/lib"
+
+ ui.port: 8080
+ ui.childopts: "-Xmx768m"
+
+ # RKNOTE
+# storm.scheduler: "storm.starter.scheduler.DemoScheduler"
+# supervisor.scheduler.meta:
+# supervisor name
+#     name: "134.84.121.38"
